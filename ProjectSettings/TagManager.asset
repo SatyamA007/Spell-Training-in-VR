@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Enemy Head
   - Wand
+  - PIP
   layers:
   - Default
   - TransparentFX
