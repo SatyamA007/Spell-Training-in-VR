@@ -18022,7 +18022,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976728668}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
@@ -18062,6 +18062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72bb181055cee0d4383165b60e6bb294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 0}
   imageBytes: 
   Port: 9999
 --- !u!1001 &981569740
@@ -39729,8 +39730,16 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 181934371036397457, guid: a3c828b851a98804f85d4e94cabf7933, type: 3}
+      propertyPath: snarl
+      value: 
+      objectReference: {fileID: 8300000, guid: 6ed8a7c14c9d7ce42b5b30f2e914ea25, type: 3}
     - target: {fileID: 181934371036397464, guid: a3c828b851a98804f85d4e94cabf7933, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 181934371036397464, guid: a3c828b851a98804f85d4e94cabf7933, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 181934371036397468, guid: a3c828b851a98804f85d4e94cabf7933, type: 3}
@@ -41361,7 +41370,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a6f42482faf7fed45a2b9623d5fbd4ae, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6ed8a7c14c9d7ce42b5b30f2e914ea25, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -14,12 +14,12 @@ using System.Linq;
 
 public class PIP_webcam : MonoBehaviour
 {
-    RawImage image = null; 
+    public RawImage image = null; 
     public byte[] imageBytes = null;
     //[SerializeField] string IPAddressString = "192.168.0.1"; //probably not needed
     [SerializeField] int Port = 9999;
     WebSocketServer webSocketServer;
-    bool lockObj = false; 
+    bool lockObj = true; 
     Texture2D myTexture;
     // Use this for initialization
     void Start ()
@@ -50,8 +50,10 @@ public class PIP_webcam : MonoBehaviour
         //Change The Image
         if(imageBytes!=null&&!lockObj){
             myTexture.LoadImage(imageBytes);
-            myTexture.Apply();        
+            myTexture.Apply();  
+            image.enabled = true;      
             image.texture = myTexture;
+            lockObj = true;
         }
     }
     public void func(byte[] fromServer){
@@ -76,16 +78,6 @@ public class MyWebSocketBehavior : WebSocketBehavior
         pip.func(bytes);
         bytes = null;
     }
-    void sampleMethod(){
-
-        //Texture2D myTexture = new Texture2D(100,100);
-        // myTexture.LoadImage(bytes);
-        // myTexture.Apply();
-        // RawImage pip_image = GameObject.FindGameObjectWithTag("PIP").GetComponent<RawImage>();
-        // if(pip_image!=null)
-        //     pip_image.texture = myTexture;
-    }
-
     
     protected override void OnClose(CloseEventArgs e)
     {
@@ -98,9 +90,7 @@ public class MyWebSocketBehavior : WebSocketBehavior
     }
  
     protected override void OnOpen()
-    {
-        // GeneratePlayer(this);
-       
+    {      
         Debug.Log("MyWebSocketBehavior OnOpen");
     }
 }

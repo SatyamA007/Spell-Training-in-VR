@@ -8,6 +8,7 @@ TagManager:
   - Enemy Head
   - Wand
   - PIP
+  - monster
   layers:
   - Default
   - TransparentFX

@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class MonsterSounds : MonoBehaviour
 {
-    public AudioSource entry;
-    public AudioSource roar;
-    public AudioSource grunt;
-    void Start()
-    {
-        roar.PlayDelayed(2);
-        entry.Play();
+    AudioSource audioSource;
+    public AudioClip voice;
+
+    private void Start() {
+        audioSource = GetComponent<AudioSource>();
     }
 
-    private void OnTriggerStay(Collider other) {
-                entry.Play();
-
-    }
+    private void OnCollisionEnter(Collision other) {
+       if(other.gameObject.CompareTag("Player")){
+           audioSource.PlayOneShot(voice, 0.2f);
+       }
+   }
 }

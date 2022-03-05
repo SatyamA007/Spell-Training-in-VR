@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Spell : MonoBehaviour
 {
@@ -32,8 +33,13 @@ public class Spell : MonoBehaviour
 
     public void SpawnMonster(){
         if(monster.Length!=0){
-            GameObject monsterGO = Instantiate(monster[idx], hit.point,Quaternion.identity);
+            GameObject monsterGO = Instantiate(monster[idx], hit.point, Quaternion.Euler(0, -hit.transform.rotation.y,0));
+            monsterGO.tag = "monster";
+            monsterGO.transform.LookAt(gameObject.transform);
         }
+
+        RawImage image = GameObject.FindGameObjectWithTag("PIP").GetComponent<RawImage>();
+        image.enabled = false;
     }
 
 }
