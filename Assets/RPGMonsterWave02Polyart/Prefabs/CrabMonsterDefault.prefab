@@ -1547,7 +1547,7 @@ GameObject:
   - component: {fileID: -4634056042731940088}
   m_Layer: 0
   m_Name: CrabMonsterDefault
-  m_TagString: Untagged
+  m_TagString: monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

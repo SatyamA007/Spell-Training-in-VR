@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: -6609875173117261429}
   m_Layer: 0
   m_Name: ChestMonsterDefault
-  m_TagString: Untagged
+  m_TagString: monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -608,8 +608,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.1484804, y: 2.5383744, z: 2.3555827}
+  m_Center: {x: -0.034211397, y: 0.38867787, z: -0.06457734}
 --- !u!114 &-6313472847077760960
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1616,7 +1616,7 @@ GameObject:
   - component: {fileID: 6174221880597158473}
   m_Layer: 0
   m_Name: RatAssassinDefault
-  m_TagString: Untagged
+  m_TagString: monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1628,15 +1628,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5007196103531211192}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.12840563, z: -0, w: 0.99172175}
+  m_LocalPosition: {x: 0.0020804878, y: -0.004999995, z: 0.00010835938}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 5007196103531378112}
   - {fileID: 5007196103531378074}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -14.755, z: 0}
 --- !u!95 &5007196103521851936
 Animator:
   serializedVersion: 3
@@ -1702,7 +1702,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.6
+  MinDistance: 0.61808306
   MaxDistance: 5
   Pan2D: 0
   rolloffMode: 0

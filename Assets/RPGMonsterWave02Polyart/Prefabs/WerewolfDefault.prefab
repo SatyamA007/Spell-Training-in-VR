@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 7242960613872481071}
   m_Layer: 0
   m_Name: WerewolfDefault
-  m_TagString: Untagged
+  m_TagString: monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1384,7 +1384,7 @@ GameObject:
   - component: {fileID: -3328842049470976936}
   m_Layer: 0
   m_Name: FlyingDemonDefault
-  m_TagString: Untagged
+  m_TagString: monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
