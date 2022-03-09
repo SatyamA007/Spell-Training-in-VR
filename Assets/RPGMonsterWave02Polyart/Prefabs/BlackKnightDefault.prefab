@@ -604,8 +604,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.2978992, y: 3.356672, z: 3.3696933}
+  m_Center: {x: 0.07166544, y: 1.4783362, z: 0.7820601}
 --- !u!82 &-5516045698803788120
 AudioSource:
   m_ObjectHideFlags: 0
@@ -626,7 +626,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.6
+  MinDistance: 0.9025784
   MaxDistance: 5
   Pan2D: 0
   rolloffMode: 0
